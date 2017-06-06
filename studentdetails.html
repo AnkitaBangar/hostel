@@ -1,0 +1,325 @@
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="mystyle2.css" />
+
+<title>student form</title>
+<script>
+function validateForm() 
+{
+    var x = document.forms["studentdetails"]["gender"].value;
+     var y = document.forms["studentdetails"]["Degree"].value;
+     var z=document.forms["studentdetails"]["year"].value;
+     var a=document.forms["studentdetails"]["Colgname"].value;
+          var b=document.forms["studentdetails"]["pincode"].value;
+
+
+    if (x == null || x == "") {
+        alert("gender must be filled out");
+        return false;
+        }
+         if (y== null || y=="") {
+        alert(" degree must be filled out");
+        return false;
+        }
+    if(z==null || z==""){
+      alert("year field must be filled out");
+      return false;
+    }
+     if(a==null || a==""){
+      alert("please enter college name");
+      return false;
+    }
+    if( b.length <6 || b.length>6 ){
+      alert("pincode must be 6 char");
+      return false;
+
+}
+}
+</script>
+
+</head>
+<body>
+
+<div class="main" align="center">
+<div class="img">
+<h1>HOSTEL ALLOTMENT SYSTEM</h1>
+</div>
+ <div class="navbar">
+    
+
+<ul class="tab">
+  <li><a href="home.html">HOME</a></li>
+
+  <li><a href="register.html">REGISTER</a></li>
+  <li><a href="login.html">USER LOGIN</a></li>
+    <li><a href="login1.html">BOOK ROOM</a></li>
+
+    <li><a href="studentdetails.html">STUDENT DETAILS</a></li>
+
+</ul>
+</div>
+</div>
+
+
+<div id="content">
+
+
+ <form name="studentdetails" onsubmit="return validateForm()" method="post" action="student.php" >
+
+<center>
+<table  width="30%" border="0" align="center" cellpadding="1" cellspacing="0" style="  padding:10px; padding-top:1px">
+<tr>
+  <th colspan="2">
+			<h3><font color="#FF0000">FILL UP YOUR DETAILS HERE</font></h3>
+			
+  </th>
+</tr>
+
+<tr>
+	<th width=50%>
+  <table weight="50%" border="0" align="center">
+  <tr>
+      <td><b>Student ID:</b></td>
+      <td><input type="text" name="studentid"></td>
+    </tr>
+ 
+    <tr>
+      <td><b>First name:</b></td>
+      <td><input type="text" name="Fname"></td>
+    </tr>
+    <tr>
+      <td><b>Last name:</b></td>
+      <td><input type="text" name="Lname"></td>
+    </tr>
+    <tr>
+      <td><b>Gender:</b></td>
+
+      <td><input type="radio" name="gender" value="male">male
+      <input type="radio" name="gender" value="female">female</td>
+      
+
+    </tr>
+ <tr>
+   <td><b>DOB:</b></td>
+    <td><select name="DD">
+
+<option value="1">1</option>
+
+<option value="2">2</option>
+
+<option value="3">3</option>
+
+<option value="4">4</option>
+
+<option value="4">5</option>
+
+<option value="4">6</option>
+
+<option value="4">7</option>
+
+<option value="4">8</option>
+
+<option value="4">9</option>
+
+<option value="4">10</option>
+
+<option value="4">11</option>
+
+<option value="4">12</option>
+
+<option value="4">13</option>
+
+<option value="4">14</option>
+
+<option value="4">15</option>
+
+<option value="4">16</option>
+
+<option value="4">17</option>
+
+<option value="4">18</option>
+
+<option value="4">19</option>
+
+<option value="4">20</option>
+
+<option value="4">21</option>
+
+<option value="4">22</option>
+
+<option value="4">23</option>
+
+<option value="4">24</option>
+
+<option value="4">25</option>
+
+<option value="4">26</option>
+
+<option value="4">27</option>
+
+<option value="4">28</option>
+
+<option value="4">29</option>
+
+<option value="4">30</option>
+
+<option value="4">31</option>
+
+</select>
+<select name="MM">
+<option value="jan">Jan</option>
+
+<option value="feb">Feb</option>
+
+<option value="March">March</option>
+
+<option value="april">April</option>
+<option value="may">May</option>
+<option value="june">June</option>
+<option value="july">July</option>
+<option value="august">August</option>
+<option value="september">September</option>
+<option value="october">October</option>
+<option value="november">November</option>
+<option value="december">December</option>
+
+</select>
+
+
+<select name="YYYY">
+<option value="1996">1996</option>
+
+<option value="1997">1997</option>
+
+<option value="1998">1998</option>
+
+<option value="1999">1999</option>
+
+</select>
+        </td>
+      </tr>
+       <tr>
+       <td><b><div align="left">Address:</div></b></td>
+       <td><div align="left">                
+       <textarea name="message" id="message" rows="3" cols="25"></textarea>
+       </div></td>
+      </tr>
+      <tr>
+       <td><b><div align="left">City:</b></td>
+       <td><div align="left">
+       <select name="city">
+         <option value="Mumbai">Mumbai</option>
+    
+          <option value="Thane">Thane</option>
+          <option value="Wadala">Wadala</option>
+
+      </select>
+      </div></td>
+    </tr>
+      <tr>
+       <td><b><div align="left">State:</b></td>
+       <td><div align="left">
+       <select name="state">
+       <option value="Andra Pradesh">Andra Pradesh</option>
+    
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+
+<option value="Bihar">Bihar</option>
+    
+          <option value="Goa">Goa</option>
+          <option value="Gujra">Gujrat</option>
+
+<option value="Haryana">Haryana</option>
+    
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+
+         <option value="Jharkhand">Jharkhand</option>
+    
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerla">Kerla</option>
+    
+          <option value="Madya Pradesh">Madya Pradesh</option>
+
+<option value="Maharshtra">Maharshtra</option>
+    
+          <option value="Manipur">Manipur</option>
+          <option value="meghalaya">meghalaya</option>
+          <option value="mizoram">Mizoram</option>
+    
+          <option value="nagaland">nagaland</option>
+          <option value="orisa">orisa</option>
+
+<option value="punjab">punjab</option>
+    
+          <option value="rajastan">rajastan</option>
+          <option value="sikkim">sikkim</option>
+          <option value="tamil nadu">tamil nadu</option>
+    
+          <option value="tripura">tripura</option>
+          <option value="utaranchal">uttaranchal</option>
+          <option value="uttar pradesh">uttar pradesh</option>
+    
+          <option value="west bengal">west bengal</option>
+
+
+
+
+
+      </select>
+      </div></td>
+    </tr>
+     <tr>
+      <td><b>Pincode:</b></td>
+      <td><input type="text" name="pincode"></td>
+    </tr> 
+	   <tr>
+       <td><b><div align="left">Degree:</b></td>
+       <td><div align="left">
+       <select name="Degree">
+         <option value="Computer Engineering">Computer Engineering</option>
+    
+          <option value="Infromation Technology">Information Technology</option>
+          <option value="EXTC">EXTC</option>
+                    <option value="Biomedical">Biomedical</option>
+
+      </select>
+      </div></td>
+    </tr>
+      <td><b>Year:</b></td>
+
+      <td><input type="radio" name="year" value="F.E">F.E
+      <input type="radio" name="year" value="S.E">S.E
+	  <input type="radio" name="year" value="T.E">T.E
+      <input type="radio" name="year" value="B.E">B.E
+	  </td>
+    </tr>
+     <tr>
+       <td><b><div align="left">Collage name:</b></td>
+       <td><div align="left">
+       <select name="Colgname">
+         <option value="VIT">VIT</option>
+    
+          <option value="VP">VP</option>
+          
+
+      </select>
+      </div></td>
+    </tr>
+      
+      <th colspan="4"><input type="submit" value="submit" name="submit"  >
+<input type="reset" value="reset" ></th>
+
+    </tr>
+   
+</table>
+</table>
+</center>
+</form>
+</div>
+</body>
+</html>
+
+

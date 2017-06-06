@@ -1,0 +1,51 @@
+body{
+	background-color:white;
+}
+
+div.leftpic{
+	background-image: url("recp.jpg");
+	width:300px;
+	height:200px;
+	border:#CCCCCC solid 1px;
+	float:left;
+}
+div.centerpic{
+	background-image: url("hostelrum.jpg");
+	width:300px;
+	height:200px;
+	border:#CCCCCC solid 1px;
+	float:left;
+}
+
+div.right{
+	background-image: url("kitchen.jpg");
+	width:200px;
+	height:200px;
+	border:#CCCCCC solid 1px;
+	float:left;
+}
+div.symbol{
+	background-image: url("hostelsym.jpg");
+	width:300px;
+	height:200px;
+	border:#CCCCCC solid 1px;
+	float:left;
+}
+div.food{
+	background-image: url("hostel-breakfast.jpg");
+	width:200px;
+	height:200px;
+	border:#CCCCCC solid 1px;
+	float:left;
+}
+div.fac{
+	width:600px;
+	border-right:#CCCCCC solid 1px;
+	float:left;
+}
+div.price{
+	width:600px;
+	float:left;
+}
+
+

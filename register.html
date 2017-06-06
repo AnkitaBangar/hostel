@@ -1,0 +1,137 @@
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="mystyle2.css" />
+
+<title>registration form</title>
+<script>
+function validateForm() 
+{
+    var x = document.forms["register"]["username"].value;
+     var y = document.forms["register"]["password"].value;
+     var z=document.forms["register"]["answer"].value;
+     var a=document.forms["register"]["email"].value;
+    if (x == null || x == "") {
+        alert("userName must be filled out");
+        return false;
+        }
+         else if (y.length<6) {
+        alert(" pass must be atleast 6 char");
+        return false;
+        }
+    if(z==null || z==""){
+      alert("answer field must be filled out");
+      return false;
+    }
+      else if(a==null || a==""){
+      alert("please enter email id");
+      return false;
+    }
+
+}
+</script>
+<style>
+  
+  
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="main" align="center">
+<div class="img">
+<h1>HOSTEL ALLOTMENT SYSTEM</h1>
+</div>
+ <div class="navbar">
+    
+
+<ul class="tab">
+  <li><a href="home.html">HOME</a></li>
+
+  <li><a href="register.html">REGISTER</a></li>
+  <li><a href="login.html">USER LOGIN</a></li>
+    <li><a href="login1.html">BOOK ROOM</a></li>
+
+    <li><a href="studentdetails.html">STUDENT DETAILS</a></li>
+
+</ul>
+</div>
+</div>
+<br>
+<div id="content">
+<form name="register" action="newreg.php" onsubmit="return validateForm()" method="post">
+<table  width="30%" border="0" align="center" cellpadding="1" cellspacing="0" style=" padding:5px; padding-top:1px">
+<tr>
+  <th colspan="2">
+			<h3><font color="#FF0000">SIGNUP HERE </font></h3>
+			
+  </th>
+</tr>
+
+<tr>
+	<th width=50%>
+  <table weight="50%" border="0" align="center">
+ 
+    <tr>
+      <td><b>Username:</b></td>
+      <td><input type="text" name="username"></td>
+    </tr>
+  
+    <tr>
+      <td><b>Password:</b></td>
+      <td><input type="password" name="password"></td>
+    </tr>
+  
+    <tr>
+      <td><b>Confirm Password:</b></td>
+      <td><input type="password" name="co_password"></td>
+    </tr>
+    <tr>
+    
+    <tr>
+       <td><b><div align="left">Security Question:</b></td>
+       <td><div align="left">
+       <select name="question">
+         <option value="Your First School Name">Your First School Name?</option>
+    
+          <option value="Your Mothers Name">Your Mothers Name?</option>
+          <option value="Favorite Color">Favorite Color?</option>
+      </select>
+      </div></td>
+    </tr>
+    <tr>
+      <td><b>Answer:</b></td>
+       <td>
+       <input name="answer" type="text" id="answer" size="30" />
+       </td>
+     </tr>
+    
+      <tr>
+        <td><b>E-mail:</b></td>
+        <td>
+        <input name="email" type="text" id="email" />
+        </td>
+      </tr>
+      <tr>
+        <td><b><div align="left">Mobile:</div></b></td>
+        <td><div align="left">
+        <input name="mobile" type="text" id="mobile" />
+        </div></td>
+      </tr>
+      <tr>
+        <th colspan="2"><input type="reset" name="reset">
+        <input type="submit" name="submit">
+        </th>
+      </tr>
+      
+</table>
+</table>
+</center>
+</form>
+</div>
+</body>
+</html>
+
+

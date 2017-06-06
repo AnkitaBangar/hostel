@@ -1,0 +1,53 @@
+
+body{
+    background-color:   #D2B48C;
+	font-size:16px;
+	border-spacing:="0";
+	 border-radius:0;
+    border:0;
+}
+
+div.img{
+
+    background-image: url("ensayo-psu.jpg");
+    width:1200px;
+    height:230px;
+    border:#cccccc solid 3px;
+    border-bottom-color:#000000;
+    color:black;
+}
+div.navbar{
+width:1200px;
+    
+    border:#cccccc solid 2px;
+    border-top-color:#000000
+}
+ul.tab{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+}
+
+ ul.tab li {
+    margin-right:5px;
+    float: left;
+    margin-right: 115px;
+}
+
+ul.tab li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.tab li a:hover {
+    background-color: #111;
+}
+
+
+
+

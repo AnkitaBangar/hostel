@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle3.css" />
+	<link rel="stylesheet" type="text/css" href="mystyle2.css" />
+
+
+	<title>
+		home page
+	</title>
+	
+</head>
+<body>
+<div class="main" align="center">
+<div class="img">
+<h1>HOSTEL ALLOTMENT SYSTEM</h1>
+</div>
+ <div class="navbar">
+    
+    <ul class="tab">
+  <li class="active"><a href="home.html">HOME</a></li>
+
+  <li><a href="register.html">REGISTER</a></li>
+  <li><a href="login.html">USER LOGIN</a></li>
+    <li><a href="login1.html">BOOK ROOM</a></li>
+
+    <li><a href="studentdetails.html">STUDENT DETAILS</a></li>
+
+</ul>
+</div>
+</div>
+<center>
+<div class="main2">
+
+
+		<div class="leftdiv">
+		&nbsp;
+		&nbsp;
+		<br>
+		<br>
+		<div id="map" style="width:380px;height:300px;"></div>
+
+		<script>
+
+		function myMap() {
+			var mapOptions = {
+			center: new google.maps.LatLng(19.0151, 72.8581),
+			zoom: 15,
+			mapTypeId: google.maps.MapTypeId.HYBRID
+			}
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+		</script>
+		
+							<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+			
+		</div>
+
+			<div class="rightdiv">
+				<h1>Hostel V-outsiders is happy to welcome you!!</h1>
+				<marquee>
+				<p id="first"><b>Book your room online</b></p>
+				</marquee>
+					<div class="image-right"></div>
+					<div class="image-left">  
+
+							<p >&nbsp;Come alone or bring your friends with you,stay here for months or for &nbsp;years.Make your career bright.ALL the best!!</p>
+							<p>&nbsp;feel free to contact us anytime in case you have any query regarding &nbsp;hostel</p>
+							<p>&nbsp;Vidyalankar marg,<br>&nbsp;wadala(E),<br>&nbsp;mumbai-400037.<br>&nbsp;telefax:24161126 www.vit.edu.in<br>
+							&nbsp;<a href="services.html">View pictures and details</a></p>
+	    				</div>
+						
+		
+      				 </div>
+			</div>
+	</div>
+</center>
+
+</body>
+</html>

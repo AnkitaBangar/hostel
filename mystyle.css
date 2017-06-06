@@ -1,0 +1,26 @@
+
+#outerTable {
+
+	background-image: url("");
+	width:30%;
+	border:0;
+	border-spacing:="0";
+  padding:10px; 
+  padding-top:1px;
+}
+
+#innerTable {
+
+	width:75%;
+	border:0;
+	height:150px;
+	text-align:center;
+	border-spacing:"0";
+ 
+   padding:10px;  
+   padding-top:10px;
+   padding-bottom: 10px;
+ }
+
+
+		

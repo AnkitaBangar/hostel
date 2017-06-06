@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+
+  <link rel="stylesheet" type="text/css" href="mystyle2.css" />
+
+<title>login page</title>
+<script>
+function validateForm() 
+{
+    var x = document.forms["login"]["username"].value;
+     var y = document.forms["login"]["password"].value;
+    if (x == null || x == "") {
+        alert("userName must be filled out");
+        return false;
+        }
+         else if (y.length<6) {
+        alert(" pass must be atleast 6 char");
+        return false;
+        }
+    
+}
+</script>
+
+</head>
+<body>
+<div class="main" align="center">
+<div class="img">
+<h1>HOSTEL ALLOTMENT SYSTEM</h1>
+</div>
+ <div class="navbar">
+    
+
+<ul class="tab">
+  <li><a href="home.html">HOME</a></li>
+
+  <li><a href="register.html">REGISTER</a></li>
+  <li><a href="login.html">USER LOGIN</a></li>
+    <li><a href="login1.html">BOOK ROOM</a></li>
+
+    <li><a href="studentdetails.html">STUDENT DETAILS</a></li>
+
+</ul>
+</div>
+</div>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+
+<div id="content">
+<form name="login" method="post" action="login.php" onsubmit="return validateForm()" >
+<table  id="outerTable" align="center"> 
+<tr>
+	<th colspan="2">
+	<h2><font color="#FF0000">Welcome to hostel V-outsiders</font></h2>
+	</th>
+</tr>
+
+<tr>
+		<th width="50%">
+        <table  id="innerTable" align="center">
+        
+            <tr>
+                 <th colspan="2" bgcolor="#CCCCCC"><font color="#000000">USER LOGIN</font></th>
+			</tr>
+</tr>
+			
+<tr>
+        <td>Username:</td>
+        <td><label>
+        <input name="username" type="text" id="username" />
+        </label></td>
+</tr>
+<tr>             
+		<td>Password:</td>
+        <td><label>
+        <input name="password" type="password" id="password" />
+        </label></td>
+</tr>
+<tr>
+	
+		<td colspan=2><label>
+	    <div align="center">
+	    <input name="submit" type="submit" id="submit"/>
+	    </div>
+	    </label></td>
+</tr>
+
+
+</table>
+</table>
+</form>
+</div>
+</body>
+</html>
+
+
+
+

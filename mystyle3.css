@@ -1,0 +1,40 @@
+
+div.main2{
+	background-color: 	#D2B48C;
+	width:1130px;
+	border:transparent solid 1px;
+}
+div.leftdiv{
+
+			width:400px;
+			height:350px;
+			float:left;
+			align:center;
+		}
+
+		div.rightdiv{
+			float:left;
+			width: 710px;
+			height:350px;
+			text-align:center;
+			
+			align:left;
+		}
+		div.image-right{
+			float: left;
+			background-image: url("hostel-building.jpg");
+			width:280px;
+			height:213px;
+			
+		}
+		div.image-left{
+			float: left;
+			width:420px;
+			height:230px;
+			text-align:left;
+		}
+
+#first {
+    margin-top: -3px;
+    font-size:19px;
+}
